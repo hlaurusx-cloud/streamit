@@ -6,9 +6,9 @@ st.header(" 값 입력")
 col1, col2 = st.columns(2)
 
 with col1:
-    A = st.number_input("숫자 A", value=5.0,  format="%.6f", step=1.0)
+    A = st.number_input("숫자 A", value=5.0, step=1.0)
 with col2:
-    B = st.number_input("숫자 B", value=3.0,  format="%.6f",step=1.0)
+    B = st.number_input("숫자 B", value=3.0, step=1.0)
 
 # --- 第1项：两数相加 ---
 st.header("두 값의 합")
