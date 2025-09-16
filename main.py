@@ -17,10 +17,11 @@ if st.button("A + B"):
     st.success(f"A + B = {sum}")
 
 # --- 第2项：A，B之间选择 ---
-choice = st.selectbox(
-    "A 또는 B 중 선택",
-    options=[("A", A), ("B", B)],
-    format_func=lambda x: f"{x[0]} = {x[1]}"
-)
+choice = st.selectbox("A 또는 B 중 선택하시오",options=[("A", A), ("B", B)],format_func=lambda x: f"{x[0]} = {x[1]}")
 
 selected_value = choice[1]
+
+# --- 第3项：从 1 到所选数字的总和 ---
+if selected_value > 0:
+    total = sum(range(1, int(selected_value) + 1))
+    st.info(f"1부터 {selected_value}까지의 합 = {total}")
