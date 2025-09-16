@@ -11,7 +11,7 @@ with col2:
     B = st.number_input("숫자 B", value=3.0, format="%.6f", step=1.0)
 
 # --- 第一项：两数相加 ---
-st.header("两数相加")
+st.header("selectbox")
 if st.button("计算 A + B"):
     sum_ab = A + B
     st.success(f"A + B = {sum_ab}")
