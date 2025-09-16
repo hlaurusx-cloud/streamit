@@ -11,7 +11,7 @@ with col2:
     B = st.number_input("숫자 B", value=3.0,  format="%.6f",step=1.0)
 
 # --- 第1项：两数相加 ---
-st.header("두 값이 더하기")
+st.header("두 값의 합")
 if st.button("A + B"):
     sum = A + B
     st.success(f"A + B = {sum}")
@@ -23,5 +23,5 @@ selected_value = choice[1]
 
 # --- 第3项：从 1 到所选数字的总和 ---
 if selected_value > 0:
-    total = sum(range(1, (selected_value) + 1))
-    st.info(f"1부터 {selected_value}까지의 합 = {total}")
+    total = sum(range(1, int(selected_value) + 1))
+    st.info(f"선택된 {selected_value}까지의 합 = {total}")
