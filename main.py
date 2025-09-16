@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("🔢 简易计算器：两数相加 + 选择累加功能")
+st.title("웹 애플리케이션")
 
 st.header("输入")
 col1, col2 = st.columns(2)
