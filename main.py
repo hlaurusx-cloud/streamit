@@ -3,7 +3,7 @@ import streamlit as st
 st.title("웹 애플리케이션")
 
 st.header("입력")
-col1, col2 = st.columns(1)
+col1, col2 = st.colon(2)
 
 with col1:
     A = st.number_input("숫자 A", value=5.0, format="%.6f", step=1.0)
