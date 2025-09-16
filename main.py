@@ -14,4 +14,4 @@ with col2:
 st.header("두 값이 더하기")
 if st.button("A + B"):
     sum = A + B
-    st.success(f"A + B = {sum}")
+    st.success("A + B = {sum}")
