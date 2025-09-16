@@ -23,5 +23,6 @@ selected_value = choice[1]
 
 # --- 第3项：从 1 到所选数字的总和 ---
 if selected_value > 0:
-    total = sum(range(1, int(selected_value) + 1))
-    st.info(f"선택된 {selected_value}까지의 합 = {total}")
+    n= selected_value
+    total = sum(range(1,n + 1)
+    st.info(f"선택된 {n}까지의 합 = {total}")
