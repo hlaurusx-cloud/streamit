@@ -13,9 +13,3 @@ with col2:
 # --- 第一项：两数相加 ---
 st.header("selectbox")
 col1, col2 = st.columns(2)
-
-with col1: 
-    
-if st.button("计算 A + B"):
-    sum_ab = A + B
-    st.success(f"A + B = {sum_ab}")
